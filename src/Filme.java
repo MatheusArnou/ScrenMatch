@@ -3,8 +3,8 @@ public class Filme {
     String nome;
     int anoLancamento;
     boolean incluidoNoPlano;
-    double somaAvaliacao;
-    int totalDeAvaliacoes;
+    private double somaAvaliacao;
+    private int totalDeAvaliacoes;
     int duracaoEmMinutos;
 
     void ExibirFichaTecnica() {
@@ -20,6 +20,10 @@ public class Filme {
 
     double mediaAvaliacao() {
         return somaAvaliacao / totalDeAvaliacoes;
+    }
+
+    int getTotalDeAvaliacoes (){
+        return totalDeAvaliacoes;
     }
 
 }
