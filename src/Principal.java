@@ -3,9 +3,10 @@ import br.com.alura.screenmatch.modelo.Filme;
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.nome = "Poderoso chefão";
-        meuFilme.anoLancamento = 1970;
-        meuFilme.duracaoEmMinutos = 180;
+        meuFilme.setNome("Poderoso chefão");
+        meuFilme.setAnoLancamento(1970);
+        meuFilme.setDuracaoEmMinutos(180);
+        meuFilme.setIncluidoNoPlano(true);
         meuFilme.ExibirFichaTecnica();
         meuFilme.avalia(8);
         meuFilme.avalia(5);
