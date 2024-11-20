@@ -1,10 +1,11 @@
+import br.com.alura.screenmatch.modelo.Filme;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
         meuFilme.nome = "Poderoso chefão";
         meuFilme.anoLancamento = 1970;
         meuFilme.duracaoEmMinutos = 180;
-
         meuFilme.ExibirFichaTecnica();
         meuFilme.avalia(8);
         meuFilme.avalia(5);
@@ -15,7 +16,7 @@ public class Principal {
 //        Como era feito antes de alterar o acesso do atributo
 //        meuFilme.somaAvaliacao = 10;
 //        meuFilme.totalDeAvaliacoes = 1;
-        System.out.println(meuFilme.mediaAvaliacao());
+// System.out.println(meuFilme.mediaAvaliacao());
 
     }
 }
