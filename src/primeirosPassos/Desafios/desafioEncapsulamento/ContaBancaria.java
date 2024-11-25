@@ -1,4 +1,4 @@
-package primeirosPassos.desafioEncapsulamento;
+package primeirosPassos.Desafios.desafioEncapsulamento;
 
 public class ContaBancaria {
     private String numeroConta;

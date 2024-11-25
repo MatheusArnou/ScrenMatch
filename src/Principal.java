@@ -1,5 +1,5 @@
 import br.com.alura.screenmatch.modelo.Filme;
-
+import br.com.alura.screenmatch.modelo.Serie;
 
 
 public class Principal {
@@ -16,11 +16,19 @@ public class Principal {
         // 3 notas, soma total = 22
         //como é feito atualmente com o método Get
         System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
-        System.out.printf("Nota final: " + meuFilme.mediaAvaliacao());
+        System.out.println("Nota final: " + meuFilme.mediaAvaliacao());
 //        Como era feito antes de alterar o acesso do atributo
 //        meuFilme.somaAvaliacao = 10;
 //        meuFilme.totalDeAvaliacoes = 1;
 // System.out.println(meuFilme.mediaAvaliacao());
+        Serie lost = new Serie();
+        lost.setNome("Lost");
+        lost.setAnoLancamento(2000);
+        lost.ExibirFichaTecnica();
+        lost.setTemporadas(10);
+        lost.setEpPorTemporadas(10);
+        lost.setMinutosPorEp(15);
+        System.out.println("Duração para maratonar: " + lost.getDuracaoEmMinutos());
 
     }
 }

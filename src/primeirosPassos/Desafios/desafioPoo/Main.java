@@ -1,4 +1,4 @@
-package primeirosPassos.desafioPoo;
+package primeirosPassos.Desafios.desafioPoo;
 
 public class Main {
     public static void main(String[] args) {

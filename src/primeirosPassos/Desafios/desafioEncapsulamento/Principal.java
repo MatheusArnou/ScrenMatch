@@ -1,4 +1,4 @@
-package primeirosPassos.desafioEncapsulamento;
+package primeirosPassos.Desafios.desafioEncapsulamento;
 
 public class Principal {
     public static void main(String[] args) {
