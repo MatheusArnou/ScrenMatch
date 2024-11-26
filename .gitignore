@@ -2,6 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+!**/ScreenMatch/.idea
 
 ### Eclipse ###
 .apt_generated
