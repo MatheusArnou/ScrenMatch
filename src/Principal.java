@@ -4,6 +4,8 @@ import br.com.alura.screenmatch.modelo.Episodio;
 import br.com.alura.screenmatch.modelo.Filme;
 import br.com.alura.screenmatch.modelo.Serie;
 
+import java.util.ArrayList;
+
 
 public class Principal {
     public static void main(String[] args) {
@@ -54,6 +56,16 @@ public class Principal {
         ep.setTotalVisualizacoes(100);
 
         filtro.filtra(ep);
+
+        Filme filmeDoMatheus = new Filme();
+        filmeDoMatheus.setNome("Dogville");
+        filmeDoMatheus.setDuracaoEmMinutos(200);
+        filmeDoMatheus.setAnoLancamento(2003);
+        filmeDoMatheus.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+
+
 
 
     }
