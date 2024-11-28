@@ -20,13 +20,17 @@ public class PrincipalComListas {
         lista.add(filmeDoMatheus);
         lista.add(meuFilme);
         lista.add(OutroFilme);
-        //lista.add(lost);
+        lista.add(lost);
 
         for (Titulo item: lista){
             System.out.println(item.getNome());
-            Filme filme = (Filme) item;
-            System.out.println("Classificação : " + filme.getClassificacao());
+            if (item instanceof Filme filme && filme.getClassificacao() > 2){
+                System.out.println("Classificação : " + filme.getClassificacao());
+            }
         }
+
+        Filme f1 = filmeDoMatheus;
+
 
         //outra forma de usar o forEach
         //lista.forEach(nome -> System.out.println(nome));
