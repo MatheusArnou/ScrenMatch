@@ -1,4 +1,4 @@
-package primeirosPassos.Desafio.Final.Poo;
+package primeirosPassos.Desafios.Poo;
 
 public class Musica extends Audio{
     private String autor;

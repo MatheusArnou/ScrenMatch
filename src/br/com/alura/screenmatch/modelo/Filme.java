@@ -17,4 +17,9 @@ private String diretor;
     public int getClassificacao() {
         return (int) mediaAvaliacao();
     }
+
+    @Override
+    public String toString() {
+        return "Filme: " + this.getNome() + "(" + this.getAnoLancamento() + ") ";
+    }
 }

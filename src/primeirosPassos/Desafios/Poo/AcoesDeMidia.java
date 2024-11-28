@@ -1,4 +1,4 @@
-package primeirosPassos.Desafio.Final.Poo;
+package primeirosPassos.Desafios.Poo;
 
 public interface AcoesDeMidia {
     void curtir(int curtida);

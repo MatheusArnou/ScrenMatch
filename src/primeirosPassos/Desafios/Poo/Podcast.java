@@ -1,4 +1,4 @@
-package primeirosPassos.Desafio.Final.Poo;
+package primeirosPassos.Desafios.Poo;
 
 public class Podcast extends Audio {
     private String host;

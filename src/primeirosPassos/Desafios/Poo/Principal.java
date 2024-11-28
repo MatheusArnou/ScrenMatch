@@ -1,4 +1,4 @@
-package primeirosPassos.Desafio.Final.Poo;
+package primeirosPassos.Desafios.Poo;
 
 public class Principal {
     public static void main(String[] args) {

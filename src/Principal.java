@@ -64,7 +64,17 @@ public class Principal {
         filmeDoMatheus.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeDoMatheus);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(OutroFilme);
 
+        System.out.println("Tamano da lista: " + listaDeFilmes.size());
+        //Opção 1
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).toString());
+        //Opção 2
+        //System.out.println("Primeiro filme: " + listaDeFilmes.getFirst().getNome());
+        System.out.println(listaDeFilmes);
 
 
 
