@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.modelo;
 
-public class Titulo {
+import org.jetbrains.annotations.NotNull;
+
+public class Titulo implements Comparable<Titulo>{
 
     private String nome;
     private int anoLancamento;
@@ -63,5 +65,10 @@ public class Titulo {
 
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }
