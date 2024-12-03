@@ -58,7 +58,7 @@ public class Principal {
 
         filtro.filtra(ep);
 
-        Filme filmeDoMatheus = new Filme("Dogville",20003);
+        Filme filmeDoMatheus = new Filme("Dogville",2003);
         //filmeDoMatheus.setNome("Dogville");
         filmeDoMatheus.setDuracaoEmMinutos(200);
         //filmeDoMatheus.setAnoLancamento(2003);

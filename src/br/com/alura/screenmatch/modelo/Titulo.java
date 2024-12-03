@@ -2,7 +2,7 @@ package br.com.alura.screenmatch.modelo;
 
 import org.jetbrains.annotations.NotNull;
 
-public class Titulo implements Comparable<Titulo>{
+public class Titulo implements Comparable<Titulo> {
 
     private String nome;
     private int anoLancamento;
@@ -31,7 +31,7 @@ public class Titulo implements Comparable<Titulo>{
         return somaAvaliacao / totalDeAvaliacoes;
     }
 
-    public int getTotalDeAvaliacoes (){
+    public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
     }
 
@@ -71,4 +71,11 @@ public class Titulo implements Comparable<Titulo>{
     public int compareTo(Titulo outroTitulo) {
         return this.getNome().compareTo(outroTitulo.getNome());
     }
+
+
+// Forma de comparar por ano
+//    @Override
+//    public int compareTo(Titulo outroTitulo) {
+//        return Integer.compare(this.getAnoLancamento(), outroTitulo.getAnoLancamento());
+//    }
 }
