@@ -1,21 +1,6 @@
 package primeirosPassos.Desafios.OrganizandoDados;
 
-public class Compra implements Comparable<Compra>{
-    private String descricao;
-    private double valor;
-
-    public Compra(String descricao, double valor) {
-        this.descricao = descricao;
-        this.valor = valor;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public double getValor() {
-        return valor;
-    }
+public record Compra(String descricao, double valor) implements Comparable<Compra> {
 
     @Override
     public String toString() {
@@ -25,6 +10,6 @@ public class Compra implements Comparable<Compra>{
 
     @Override
     public int compareTo(Compra outraCompra) {
-        return Double.valueOf(this.valor).compareTo(Double.valueOf(outraCompra.valor));
+        return Double.compare(this.valor, outraCompra.valor);
     }
 }
